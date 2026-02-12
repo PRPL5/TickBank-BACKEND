@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="TickBank.Application/TickBank.Application.csproj" Id="d84f52fd-f628-4132-ae1b-1ba2f7f98de0" />
+  <Project Path="TickBank.Domain/TickBank.Domain.csproj" Id="cdf698b7-ded0-4652-af86-ba201e3878ce" />
+  <Project Path="TickBank.Infrastructure/TickBank.Infrastructure.csproj" Id="1e8599a3-c94b-49a7-a664-4db956a3b469" />
+  <Project Path="TickBank.Web/TickBank.Web.csproj" Id="00812229-eab0-4e0f-bce3-f74a41584f7a" />
+</Solution>
