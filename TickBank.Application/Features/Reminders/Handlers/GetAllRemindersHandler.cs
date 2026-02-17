@@ -24,7 +24,7 @@ public class GetAllRemindersHandler : IRequestHandler<GetAllRemindersQuery,List<
             .Select(x => new ReminderDto
             {
                 Id = x.Id,
-                Category = x.Category,g
+                Category = x.Category,
                 Date = x.Date,
                 Hours = x.Hours,
                 Title = x.Title,
