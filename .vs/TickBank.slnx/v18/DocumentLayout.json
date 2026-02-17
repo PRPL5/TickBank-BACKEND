@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\pc\\Documents\\GitHub\\TickBank-BACKEND\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CDF698B7-DED0-4652-AF86-BA201E3878CE}|TickBank.Domain\\TickBank.Domain.csproj|c:\\users\\pc\\documents\\github\\tickbank-backend\\tickbank.domain\\tickbank.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CDF698B7-DED0-4652-AF86-BA201E3878CE}|TickBank.Domain\\TickBank.Domain.csproj|solutionrelative:tickbank.domain\\tickbank.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{00812229-EAB0-4E0F-BCE3-F74A41584F7A}|TickBank.Web\\TickBank.Web.csproj|c:\\users\\pc\\documents\\github\\tickbank-backend\\tickbank.web\\tickbank.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{00812229-EAB0-4E0F-BCE3-F74A41584F7A}|TickBank.Web\\TickBank.Web.csproj|solutionrelative:tickbank.web\\tickbank.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TickBank.Domain",
+              "DocumentMoniker": "C:\\Users\\pc\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Domain\\TickBank.Domain.csproj",
+              "RelativeDocumentMoniker": "TickBank.Domain\\TickBank.Domain.csproj",
+              "ToolTip": "C:\\Users\\pc\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Domain\\TickBank.Domain.csproj",
+              "RelativeToolTip": "TickBank.Domain\\TickBank.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-13T17:43:19.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "TickBank.Web.csproj",
               "DocumentMoniker": "C:\\Users\\pc\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Web\\TickBank.Web.csproj",
               "RelativeDocumentMoniker": "TickBank.Web\\TickBank.Web.csproj",

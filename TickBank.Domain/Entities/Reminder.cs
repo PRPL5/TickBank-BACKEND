@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-        
+  
 namespace TickBank.Domain.Entities
 {
     public class Reminder
@@ -12,6 +12,10 @@ namespace TickBank.Domain.Entities
         public DateTime? Date { get; set; }
 
         // Navigation collection expected by ApplicationDbContext
-        public ICollection<ReminderRange> Ranges { get; set; } = new List<ReminderRange>();
+        
+        public IEnumerable<ReminderRange>? Ranges { get; set; } = new List<ReminderRange>();
+        
     }
+    
+
 }

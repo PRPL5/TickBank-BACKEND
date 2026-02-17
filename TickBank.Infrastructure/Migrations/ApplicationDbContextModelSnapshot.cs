@@ -47,7 +47,7 @@ namespace TickBank.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Reminders");
+                    b.ToTable("Reminders", (string)null);
                 });
 
             modelBuilder.Entity("TickBank.Domain.Entities.ReminderRange", b =>
@@ -69,7 +69,7 @@ namespace TickBank.Infrastructure.Migrations
 
                     b.HasIndex("ReminderId");
 
-                    b.ToTable("Ranges");
+                    b.ToTable("Ranges", (string)null);
                 });
 
             modelBuilder.Entity("TickBank.Domain.Entities.User", b =>
@@ -98,7 +98,7 @@ namespace TickBank.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("TickBank.Domain.Entities.Reminder", b =>

@@ -21,3 +21,4 @@ C:\Users\pc\Documents\GitHub\TickBank-BACKEND\TickBank.Domain\obj\Debug\net8.0\T
 C:\Users\pc\Documents\GitHub\TickBank-BACKEND\TickBank.Domain\obj\Debug\net8.0\refint\TickBank.Domain.dll
 C:\Users\pc\Documents\GitHub\TickBank-BACKEND\TickBank.Domain\obj\Debug\net8.0\TickBank.Domain.pdb
 C:\Users\pc\Documents\GitHub\TickBank-BACKEND\TickBank.Domain\obj\Debug\net8.0\ref\TickBank.Domain.dll
+C:\Users\pc\Documents\GitHub\TickBank-BACKEND\TickBank.Domain\obj\Debug\net8.0\TickBank.Domain.csproj.AssemblyReference.cache
