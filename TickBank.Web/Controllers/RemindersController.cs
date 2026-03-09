@@ -33,17 +33,14 @@ public class RemindersController : ControllerBase
     [HttpGet("{id}")]
     public IActionResult GetReminderById(Guid id)
     {
-        var reminder = _context.Reminders.Find(id);
-        if (reminder == null)
-        {
-            return NotFound();
-        }
-
-        return Ok(reminder);
+        var query = new GetReminderByIdQuery(id);
+        var result = _mediator.Send(query);
+            return Ok(result);
+      
     }
 
    [HttpPost]
-   public IActionResult Createreminder()
+   public IActionResult CreateReminder()
    {
        var reminder = new Domain.Entities.Reminder
        {
@@ -74,17 +71,7 @@ public class RemindersController : ControllerBase
         existingReminder.Hours = reminderDto.Hours;
         existingReminder.Date = reminderDto.Date;
 
-        // Update ranges
-    //    existingReminder.Ranges.Clear();
-       // foreach (var rangeDto in reminderDto.Ranges)
-      //  {
-       //     existingReminder.Ranges.Add(new Domain.Entities.ReminderRange
-       //     {
-           //     StartTime = rangeDto.StartTime,
-           //     EndTime = rangeDto.EndTime
-        //    });
-      //  }
-
+      
         _context.SaveChanges();
 
         return Ok(existingReminder);
