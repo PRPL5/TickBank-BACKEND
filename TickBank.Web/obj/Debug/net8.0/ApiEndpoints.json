@@ -1,0 +1,75 @@
+[
+  {
+    "ContainingType": "TickBank.Web.Controllers.RemindersController",
+    "Method": "GetAllReminders",
+    "RelativePath": "api/reminders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TickBank.Web.Controllers.RemindersController",
+    "Method": "CreateReminder",
+    "RelativePath": "api/reminders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TickBank.Web.Controllers.RemindersController",
+    "Method": "GetReminderById",
+    "RelativePath": "api/reminders/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TickBank.Web.Controllers.RemindersController",
+    "Method": "UpdateReminder",
+    "RelativePath": "api/reminders/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "reminderDto",
+        "Type": "TickBank.Application.Features.Reminders.DTOs.ReminderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TickBank.Web.Controllers.RemindersController",
+    "Method": "DeleteReminder",
+    "RelativePath": "api/reminders/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
