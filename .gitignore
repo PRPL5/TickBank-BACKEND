@@ -1,0 +1,71 @@
+# Build results
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.so
+*.dylib
+
+# Visual Studio cache/options
+.vs/
+.vscode/
+*.sln.iml
+
+# Rider IDE
+.idea/
+*.sln.iml
+.rider/
+*.riderz
+
+# User-specific files
+*.user
+*.userosscache
+*.sln.user
+launchSettings.json
+
+# Build artifacts
+*.nupkg
+*.snupkg
+
+# NuGet
+.nuget/
+packages/
+!packages/build/
+*.nuspec
+
+# Database
+*.mdf
+*.ldf
+*.db
+*.sqlite
+
+# Environment/Configuration
+appsettings.*.json
+.env
+.env.local
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+*.lnk
+
+# Node (if using npm for frontend)
+node_modules/
+dist/
+npm-debug.log
+
+# misc
+.sass-cache/
+*.css.map
