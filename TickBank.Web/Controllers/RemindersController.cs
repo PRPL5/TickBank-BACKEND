@@ -6,6 +6,8 @@ using TickBank.Application.Features.Reminders.DTOs;
 using TickBank.Infrastructure.Persistence.Database;
 using TickBank.Domain.Entities;
 using TickBank.Application.Features.Reminders.Queries;
+using System.Threading.Tasks;
+using TickBank.Application.Features.Reminders.Commands;
 
 namespace TickBank.Web.Controllers;
 
@@ -40,22 +42,13 @@ public class RemindersController : ControllerBase
     }
 
    [HttpPost]
-   public IActionResult CreateReminder()
+   public async Task<IActionResult> CreateReminder([FromBody] CreateReminderCommand command)
    {
-       var reminder = new Domain.Entities.Reminder
-       {
-           Title = "Title",
-           Category =" reminderDto.Category",
-           Hours = 1,
-           Date = DateTime.Now,
-         
-       };
+        var result = await _mediator.Send(command);
+        return CreatedAtAction(nameof(GetReminderById), new { id = result.Id }, result);
+    }
 
-       _context.Reminders.Add(reminder);
-       _context.SaveChanges();
 
-       return Ok(reminder);
-   }
    
    [HttpPut("{id}")]
     public IActionResult UpdateReminder(Guid id, ReminderDto reminderDto)

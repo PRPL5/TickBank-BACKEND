@@ -16,7 +16,13 @@
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "TickBank.Application.Features.Reminders.Commands.CreateReminderCommand",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

@@ -20,6 +20,25 @@
         "tags": [
           "Reminders"
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateReminderCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateReminderCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateReminderCommand"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -114,6 +133,35 @@
   },
   "components": {
     "schemas": {
+      "CreateReminderCommand": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "category": {
+            "type": "string",
+            "nullable": true
+          },
+          "hours": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ranges": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReminderRangesDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "ReminderDto": {
         "type": "object",
         "properties": {
@@ -163,9 +211,6 @@
           "endTime": {
             "type": "string",
             "nullable": true
-          },
-          "reminder": {
-            "$ref": "#/components/schemas/ReminderDto"
           }
         },
         "additionalProperties": false
