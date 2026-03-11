@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TickBank.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0667fc3acce77ec58b9af63632cfb1eb439478e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7369431ec4a6030308a8e61ba1cc367763bc1d03")]
 [assembly: System.Reflection.AssemblyProductAttribute("TickBank.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TickBank.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

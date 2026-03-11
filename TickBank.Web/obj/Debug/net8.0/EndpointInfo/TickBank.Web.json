@@ -87,17 +87,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ReminderDto"
+                "$ref": "#/components/schemas/UpdateReminderCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ReminderDto"
+                "$ref": "#/components/schemas/UpdateReminderCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ReminderDto"
+                "$ref": "#/components/schemas/UpdateReminderCommand"
               }
             }
           }
@@ -162,7 +162,25 @@
         },
         "additionalProperties": false
       },
-      "ReminderDto": {
+      "ReminderRangesDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "startTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "endTime": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateReminderCommand": {
         "type": "object",
         "properties": {
           "id": {
@@ -179,37 +197,17 @@
           },
           "hours": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "date": {
             "type": "string",
-            "format": "date-time",
-            "nullable": true
+            "format": "date-time"
           },
           "ranges": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ReminderRangesDto"
             },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ReminderRangesDto": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "startTime": {
-            "type": "string",
-            "nullable": true
-          },
-          "endTime": {
-            "type": "string",
             "nullable": true
           }
         },

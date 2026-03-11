@@ -43,7 +43,7 @@
   },
   {
     "ContainingType": "TickBank.Web.Controllers.RemindersController",
-    "Method": "UpdateReminder",
+    "Method": "Update",
     "RelativePath": "api/reminders/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -55,8 +55,8 @@
         "IsRequired": true
       },
       {
-        "Name": "reminderDto",
-        "Type": "TickBank.Application.Features.Reminders.DTOs.ReminderDto",
+        "Name": "command",
+        "Type": "TickBank.Application.Features.Reminders.Commands.UpdateReminderCommand",
         "IsRequired": true
       }
     ],

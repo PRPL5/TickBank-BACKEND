@@ -49,27 +49,17 @@ public class RemindersController : ControllerBase
     }
 
 
-   
-   [HttpPut("{id}")]
-    public IActionResult UpdateReminder(Guid id, ReminderDto reminderDto)
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Update(Guid id, [FromBody] UpdateReminderCommand command)
     {
-        var existingReminder = _context.Reminders.Find(id);
-        if (existingReminder == null)
-        {
-            return NotFound();
-        }
+        if (id != command.Id)
+            return BadRequest("Route ID and command ID do not match.");
 
-        existingReminder.Title = reminderDto.Title;
-        existingReminder.Category = reminderDto.Category;
-        existingReminder.Hours = reminderDto.Hours;
-        existingReminder.Date = reminderDto.Date;
-
-      
-        _context.SaveChanges();
-
-        return Ok(existingReminder);
+        var result = await _mediator.Send(command);
+        return Ok(result);
     }
-    
+
     [HttpDelete("{id}")]
     public IActionResult DeleteReminder(Guid id)
     {
