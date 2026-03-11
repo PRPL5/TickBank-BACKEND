@@ -5,13 +5,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using TickBank.Application.Features.ReminderRanges.DTOs;
 using TickBank.Application.Features.Reminders.Commands;
+using TickBank.Application.Features.Reminders.DTOs;
 using TickBank.Infrastructure.Persistence.Database;
+using TickBank.Domain.Entities;
 
 namespace TickBank.Application.Features.Reminders.Handlers
 {
-    public class UpdateReminderHandler :IRequestHandler<UpdateReminderCommand , DTOs.ReminderDto>
+    public class UpdateReminderHandler : IRequestHandler<UpdateReminderCommand, DTOs.ReminderDto>
     {
         private readonly ApplicationDbContext _context;
 
@@ -20,30 +23,32 @@ namespace TickBank.Application.Features.Reminders.Handlers
             _context = context;
         }
 
-        public async Task<DTOs.ReminderDto> Handle(UpdateReminderCommand request, CancellationToken cancellationToken)
+        public async Task<ReminderDto> Handle(UpdateReminderCommand request, CancellationToken cancellationToken)
         {
-            var reminder = await _context.Reminders.FindAsync(request.Id);
+            var reminder = await _context.Reminders
+                .Include(r => r.Ranges)
+                .FirstOrDefaultAsync(r => r.Id == request.Id, cancellationToken);
+
             if (reminder == null)
-            {
-                throw new Exception($"Reminder with ID '{request.Id}' was not found.");
-            }
+                throw new Exception("Reminder not found");
+
             reminder.Title = request.Title;
             reminder.Category = request.Category;
             reminder.Hours = request.Hours;
             reminder.Date = request.Date;
+
             _context.Ranges.RemoveRange(reminder.Ranges);
 
-            reminder.Ranges = request.Ranges.Select(r => new Domain.Entities.ReminderRange
+            reminder.Ranges = request.Ranges.Select(x => new ReminderRange
             {
-                Id = Guid.NewGuid(),
-                StartTime = r.StartTime,
-                EndTime = r.EndTime
-
+                Id = x.Id == Guid.Empty ? Guid.NewGuid() : x.Id,
+                StartTime = x.StartTime,
+                EndTime = x.EndTime,
+                ReminderId = reminder.Id
             }).ToList();
 
-
             await _context.SaveChangesAsync(cancellationToken);
-            return new DTOs.ReminderDto
+            return new ReminderDto
             {
                 Id = reminder.Id,
                 Title = reminder.Title,

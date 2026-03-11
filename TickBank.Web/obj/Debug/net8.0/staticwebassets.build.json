@@ -1,1 +1,11 @@
-{"Version":1,"Hash":"5Tey16TpkdmyjBCkAt687b7ksgHRF52vXH4cE6+2Jvw=","Source":"TickBank.Web","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "ozZtfKuY8wobQxxrM0kpXKxawGvLavun5bP36Kj9vcc=",
+  "Source": "TickBank.Web",
+  "BasePath": "_content/TickBank.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
