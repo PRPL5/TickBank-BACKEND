@@ -176,6 +176,10 @@
           "endTime": {
             "type": "string",
             "nullable": true
+          },
+          "reminderId": {
+            "type": "string",
+            "format": "uuid"
           }
         },
         "additionalProperties": false

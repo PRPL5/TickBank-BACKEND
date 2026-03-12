@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\TickBank-BACKEND\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{00812229-EAB0-4E0F-BCE3-F74A41584F7A}|TickBank.Web\\TickBank.Web.csproj|c:\\users\\admin\\documents\\github\\tickbank-backend\\tickbank.web\\controllers\\reminderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00812229-EAB0-4E0F-BCE3-F74A41584F7A}|TickBank.Web\\TickBank.Web.csproj|solutionrelative:tickbank.web\\controllers\\reminderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D84F52FD-F628-4132-AE1B-1BA2F7F98DE0}|TickBank.Application\\TickBank.Application.csproj|c:\\users\\admin\\documents\\github\\tickbank-backend\\tickbank.application\\features\\reminders\\handlers\\updatereminderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D84F52FD-F628-4132-AE1B-1BA2F7F98DE0}|TickBank.Application\\TickBank.Application.csproj|solutionrelative:tickbank.application\\features\\reminders\\handlers\\updatereminderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,8 +15,16 @@
       "RelativeMoniker": "D:0:0:{D84F52FD-F628-4132-AE1B-1BA2F7F98DE0}|TickBank.Application\\TickBank.Application.csproj|solutionrelative:tickbank.application\\features\\reminders\\commands\\updateremindercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00812229-EAB0-4E0F-BCE3-F74A41584F7A}|TickBank.Web\\TickBank.Web.csproj|c:\\users\\admin\\documents\\github\\tickbank-backend\\tickbank.web\\controllers\\reminderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00812229-EAB0-4E0F-BCE3-F74A41584F7A}|TickBank.Web\\TickBank.Web.csproj|solutionrelative:tickbank.web\\controllers\\reminderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E8599A3-C94B-49A7-A664-4DB956A3B469}|TickBank.Infrastructure\\TickBank.Infrastructure.csproj|c:\\users\\admin\\documents\\github\\tickbank-backend\\tickbank.infrastructure\\persistence\\database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E8599A3-C94B-49A7-A664-4DB956A3B469}|TickBank.Infrastructure\\TickBank.Infrastructure.csproj|solutionrelative:tickbank.infrastructure\\persistence\\database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D84F52FD-F628-4132-AE1B-1BA2F7F98DE0}|TickBank.Application\\TickBank.Application.csproj|c:\\users\\admin\\documents\\github\\tickbank-backend\\tickbank.application\\features\\reminders\\commands\\createremindercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D84F52FD-F628-4132-AE1B-1BA2F7F98DE0}|TickBank.Application\\TickBank.Application.csproj|solutionrelative:tickbank.application\\features\\reminders\\commands\\createremindercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D84F52FD-F628-4132-AE1B-1BA2F7F98DE0}|TickBank.Application\\TickBank.Application.csproj|c:\\users\\admin\\documents\\github\\tickbank-backend\\tickbank.application\\features\\reminders\\handlers\\createreminderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D84F52FD-F628-4132-AE1B-1BA2F7F98DE0}|TickBank.Application\\TickBank.Application.csproj|solutionrelative:tickbank.application\\features\\reminders\\handlers\\createreminderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D84F52FD-F628-4132-AE1B-1BA2F7F98DE0}|TickBank.Application\\TickBank.Application.csproj|c:\\users\\admin\\documents\\github\\tickbank-backend\\tickbank.application\\features\\reminderranges\\dtos\\reminderrangesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,20 +35,8 @@
       "RelativeMoniker": "D:0:0:{D84F52FD-F628-4132-AE1B-1BA2F7F98DE0}|TickBank.Application\\TickBank.Application.csproj|solutionrelative:tickbank.application\\features\\reminders\\queries\\getallremindersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D84F52FD-F628-4132-AE1B-1BA2F7F98DE0}|TickBank.Application\\TickBank.Application.csproj|c:\\users\\admin\\documents\\github\\tickbank-backend\\tickbank.application\\features\\reminders\\handlers\\createreminderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D84F52FD-F628-4132-AE1B-1BA2F7F98DE0}|TickBank.Application\\TickBank.Application.csproj|solutionrelative:tickbank.application\\features\\reminders\\handlers\\createreminderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D84F52FD-F628-4132-AE1B-1BA2F7F98DE0}|TickBank.Application\\TickBank.Application.csproj|c:\\users\\admin\\documents\\github\\tickbank-backend\\tickbank.application\\features\\reminders\\commands\\createremindercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D84F52FD-F628-4132-AE1B-1BA2F7F98DE0}|TickBank.Application\\TickBank.Application.csproj|solutionrelative:tickbank.application\\features\\reminders\\commands\\createremindercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D84F52FD-F628-4132-AE1B-1BA2F7F98DE0}|TickBank.Application\\TickBank.Application.csproj|c:\\users\\admin\\documents\\github\\tickbank-backend\\tickbank.application\\features\\reminders\\dtos\\reminderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D84F52FD-F628-4132-AE1B-1BA2F7F98DE0}|TickBank.Application\\TickBank.Application.csproj|solutionrelative:tickbank.application\\features\\reminders\\dtos\\reminderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E8599A3-C94B-49A7-A664-4DB956A3B469}|TickBank.Infrastructure\\TickBank.Infrastructure.csproj|c:\\users\\admin\\documents\\github\\tickbank-backend\\tickbank.infrastructure\\persistence\\database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E8599A3-C94B-49A7-A664-4DB956A3B469}|TickBank.Infrastructure\\TickBank.Infrastructure.csproj|solutionrelative:tickbank.infrastructure\\persistence\\database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CDF698B7-DED0-4652-AF86-BA201E3878CE}|TickBank.Domain\\TickBank.Domain.csproj|c:\\users\\admin\\documents\\github\\tickbank-backend\\tickbank.domain\\tickbank.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -74,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
@@ -105,21 +105,25 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UpdateReminderHandler.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Application\\Features\\Reminders\\Handlers\\UpdateReminderHandler.cs",
               "RelativeDocumentMoniker": "TickBank.Application\\Features\\Reminders\\Handlers\\UpdateReminderHandler.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Application\\Features\\Reminders\\Handlers\\UpdateReminderHandler.cs",
               "RelativeToolTip": "TickBank.Application\\Features\\Reminders\\Handlers\\UpdateReminderHandler.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAWwB0AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAjwDkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-11T12:36:57.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UpdateReminderCommand.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Application\\Features\\Reminders\\Commands\\UpdateReminderCommand.cs",
               "RelativeDocumentMoniker": "TickBank.Application\\Features\\Reminders\\Commands\\UpdateReminderCommand.cs",
@@ -131,12 +135,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ReminderRangesDto.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Application\\Features\\ReminderRanges\\DTOs\\ReminderRangesDto.cs",
               "RelativeDocumentMoniker": "TickBank.Application\\Features\\ReminderRanges\\DTOs\\ReminderRangesDto.cs",
@@ -149,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "GetAllRemindersQuery.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Application\\Features\\Reminders\\Queries\\GetAllRemindersQuery.cs",
               "RelativeDocumentMoniker": "TickBank.Application\\Features\\Reminders\\Queries\\GetAllRemindersQuery.cs",
@@ -162,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ReminderDto.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Application\\Features\\Reminders\\DTOs\\ReminderDto.cs",
               "RelativeDocumentMoniker": "TickBank.Application\\Features\\Reminders\\DTOs\\ReminderDto.cs",
@@ -181,46 +181,46 @@
               "RelativeDocumentMoniker": "TickBank.Application\\Features\\Reminders\\Handlers\\CreateReminderHandler.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Application\\Features\\Reminders\\Handlers\\CreateReminderHandler.cs",
               "RelativeToolTip": "TickBank.Application\\Features\\Reminders\\Handlers\\CreateReminderHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAwwDoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-11T11:44:43.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "CreateReminderCommand.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Application\\Features\\Reminders\\Commands\\CreateReminderCommand.cs",
               "RelativeDocumentMoniker": "TickBank.Application\\Features\\Reminders\\Commands\\CreateReminderCommand.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Application\\Features\\Reminders\\Commands\\CreateReminderCommand.cs",
               "RelativeToolTip": "TickBank.Application\\Features\\Reminders\\Commands\\CreateReminderCommand.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-11T11:44:01.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "RemindersController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Web\\Controllers\\RemindersController.cs",
               "RelativeDocumentMoniker": "TickBank.Web\\Controllers\\RemindersController.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Web\\Controllers\\RemindersController.cs",
               "RelativeToolTip": "TickBank.Web\\Controllers\\RemindersController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAwwDkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAIwDUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-11T11:35:48.385Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Infrastructure\\Persistence\\Database\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "TickBank.Infrastructure\\Persistence\\Database\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Infrastructure\\Persistence\\Database\\ApplicationDbContext.cs",
               "RelativeToolTip": "TickBank.Infrastructure\\Persistence\\Database\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T15:39:28.02Z",
               "EditorCaption": ""

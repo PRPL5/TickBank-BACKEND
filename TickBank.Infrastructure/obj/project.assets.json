@@ -2586,32 +2586,39 @@
     ]
   },
   "packageFolders": {
-    "/Users/jakubdemaliaj/.nuget/packages/": {}
+    "C:\\Users\\pc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jakubdemaliaj/Documents/GitHub/TickBank-BACKEND/TickBank.Infrastructure/TickBank.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\pc\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Infrastructure\\TickBank.Infrastructure.csproj",
       "projectName": "TickBank.Infrastructure",
-      "projectPath": "/Users/jakubdemaliaj/Documents/GitHub/TickBank-BACKEND/TickBank.Infrastructure/TickBank.Infrastructure.csproj",
-      "packagesPath": "/Users/jakubdemaliaj/.nuget/packages/",
-      "outputPath": "/Users/jakubdemaliaj/Documents/GitHub/TickBank-BACKEND/TickBank.Infrastructure/obj/",
+      "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Infrastructure\\TickBank.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pc\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/jakubdemaliaj/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/jakubdemaliaj/Documents/GitHub/TickBank-BACKEND/TickBank.Domain/TickBank.Domain.csproj": {
-              "projectPath": "/Users/jakubdemaliaj/Documents/GitHub/TickBank-BACKEND/TickBank.Domain/TickBank.Domain.csproj"
+            "C:\\Users\\pc\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Domain\\TickBank.Domain.csproj": {
+              "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Domain\\TickBank.Domain.csproj"
             }
           }
         }
@@ -2625,7 +2632,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -2663,12 +2671,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.24, 8.0.24]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.24, 8.0.24]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.24, 8.0.24]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/jakubdemaliaj/.dotnet/sdk/8.0.419/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

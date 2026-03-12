@@ -18,13 +18,15 @@ public class RemindersController : ControllerBase
     private readonly ApplicationDbContext _context;
     private readonly IMediator _mediator;
 
-    public RemindersController(ApplicationDbContext context , IMediator mediator)
+    public RemindersController(ApplicationDbContext context, IMediator mediator)
     {
         _context = context;
         _mediator = mediator;
     }
 
     [HttpGet]
+    [Route("getReminders    ")]
+
     public async Task<IActionResult> GetAllReminders()
     {
         var query = new GetAllRemindersQuery();
@@ -32,25 +34,30 @@ public class RemindersController : ControllerBase
         return Ok(result);
     }
 
-    [HttpGet("{id}")]
+    [HttpGet]
+    [Route("getReminderById/{id}")]
+
     public IActionResult GetReminderById(Guid id)
     {
         var query = new GetReminderByIdQuery(id);
         var result = _mediator.Send(query);
-            return Ok(result);
-      
+        return Ok(result);
+
     }
 
-   [HttpPost]
-   public async Task<IActionResult> CreateReminder([FromBody] CreateReminderCommand command)
-   {
+    [HttpPost]
+    [Route("createReminder")]
+
+    public async Task<IActionResult> CreateReminder([FromBody] CreateReminderCommand command)
+    {
         var result = await _mediator.Send(command);
         return CreatedAtAction(nameof(GetReminderById), new { id = result.Id }, result);
     }
 
 
 
-    [HttpPut("{id}")]
+    [HttpPut]
+    [Route("updateReminder/{id}")]
     public async Task<IActionResult> Update(Guid id, [FromBody] UpdateReminderCommand command)
     {
         if (id != command.Id)
@@ -60,7 +67,9 @@ public class RemindersController : ControllerBase
         return Ok(result);
     }
 
-    [HttpDelete("{id}")]
+    [HttpDelete]
+    [Route("deleteReminder/{id}")]
+
     public IActionResult DeleteReminder(Guid id)
     {
         var reminder = _context.Reminders.Find(id);
