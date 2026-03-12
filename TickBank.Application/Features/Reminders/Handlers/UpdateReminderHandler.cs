@@ -35,7 +35,7 @@ namespace TickBank.Application.Features.Reminders.Handlers
             reminder.Title = request.Title;
             reminder.Category = request.Category;
             reminder.Hours = request.Hours;
-            reminder.Date = request.Date;
+            reminder.Date = request.Date!.Value;
 
             _context.Ranges.RemoveRange(reminder.Ranges);
 

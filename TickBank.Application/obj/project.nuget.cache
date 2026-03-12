@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "BbjHuBLw9ks=",
+  "dgSpecHash": "hdbWVG6i7c4=",
   "success": true,
   "projectFilePath": "C:\\Users\\pc\\Documents\\GitHub\\TickBank-BACKEND\\TickBank.Application\\TickBank.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc\\.nuget\\packages\\automapper\\16.0.0\\automapper.16.0.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\mediatr\\14.0.0\\mediatr.14.0.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0\\microsoft.entityframeworkcore.8.0.0.nupkg.sha512",

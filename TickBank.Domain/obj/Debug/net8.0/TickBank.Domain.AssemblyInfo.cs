@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TickBank.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c2429c0a8320049acbbb67ba2cb2286a9b076f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5f62c17683345b882f59b43c7079cb3487da3bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("TickBank.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TickBank.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -25,7 +25,7 @@ public class RemindersController : ControllerBase
     }
 
     [HttpGet]
-    [Route("getReminders    ")]
+    [Route("getReminders")]
 
     public async Task<IActionResult> GetAllReminders()
     {

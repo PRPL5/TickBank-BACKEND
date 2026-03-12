@@ -3,7 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.SqlServer;
 using TickBank.Infrastructure.Persistence.Database;
 using TickBank.Application.Features.Reminders.Handlers;
-
+using FluentValidation;
+using TickBank.Application.Features.Reminders.Commands;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -18,6 +20,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql
 builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(typeof(GetAllRemindersHandler).Assembly)
 );
+builder.Services.AddValidatorsFromAssemblyContaining<TickBank.Application.Features.Reminders.Commands.CreateReminderValidator>();
+
 
 var app = builder.Build();
 

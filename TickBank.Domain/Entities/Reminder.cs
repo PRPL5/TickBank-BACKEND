@@ -1,21 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-  
+using FluentValidation;
+using System.ComponentModel.DataAnnotations;
 namespace TickBank.Domain.Entities
 {
     public class Reminder
     {
         public Guid Id { get; set; }
-        public string? Title { get; set; }
-        public string? Category { get; set; }
-        public int? Hours { get; set; }
+        public string Title { get; set; }
+        public string Category { get; set; }
+        public int Hours { get; set; }
         public DateTime? Date { get; set; }
 
         // Navigation collection expected by ApplicationDbContext
-        
-        public IEnumerable<ReminderRange>? Ranges { get; set; } = new List<ReminderRange>();
-        
-    }
-    
 
+        public IEnumerable<ReminderRange>? Ranges { get; set; } = new List<ReminderRange>();
+
+    }
+
+   
+
+    
 }

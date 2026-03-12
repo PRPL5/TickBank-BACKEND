@@ -654,3 +654,5 @@ C:\Users\pc\Documents\GitHub\TickBank-BACKEND\TickBank.Web\obj\Debug\net8.0\refi
 C:\Users\pc\Documents\GitHub\TickBank-BACKEND\TickBank.Web\obj\Debug\net8.0\TickBank.Web.pdb
 C:\Users\pc\Documents\GitHub\TickBank-BACKEND\TickBank.Web\obj\Debug\net8.0\TickBank.Web.genruntimeconfig.cache
 C:\Users\pc\Documents\GitHub\TickBank-BACKEND\TickBank.Web\obj\Debug\net8.0\ref\TickBank.Web.dll
+C:\Users\pc\Documents\GitHub\TickBank-BACKEND\TickBank.Web\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\pc\Documents\GitHub\TickBank-BACKEND\TickBank.Web\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/reminders": {
+    "/api/reminders/getReminders": {
       "get": {
         "tags": [
           "Reminders"
@@ -15,7 +15,32 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/reminders/getReminderById/{id}": {
+      "get": {
+        "tags": [
+          "Reminders"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/reminders/createReminder": {
       "post": {
         "tags": [
           "Reminders"
@@ -46,28 +71,7 @@
         }
       }
     },
-    "/api/reminders/{id}": {
-      "get": {
-        "tags": [
-          "Reminders"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
+    "/api/reminders/updateReminder/{id}": {
       "put": {
         "tags": [
           "Reminders"
@@ -107,7 +111,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/reminders/deleteReminder/{id}": {
       "delete": {
         "tags": [
           "Reminders"
@@ -150,7 +156,8 @@
           },
           "date": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "ranges": {
             "type": "array",
@@ -205,7 +212,8 @@
           },
           "date": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "ranges": {
             "type": "array",

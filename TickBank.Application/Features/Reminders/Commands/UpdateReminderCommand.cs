@@ -15,7 +15,7 @@ namespace TickBank.Application.Features.Reminders.Commands
         public string Title { get; set; } = default!;
         public string Category { get; set; } = default!;
         public int Hours { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime? Date { get; set; }
         public IEnumerable<ReminderRangesDto> Ranges { get; set; } = new List<ReminderRangesDto>();
 
     }

@@ -1,3 +1,4 @@
+using FluentValidation;
 using MediatR;
 using System;
 using System.Linq;
@@ -14,21 +15,31 @@ namespace TickBank.Application.Features.Reminders.Handlers
     public class CreateReminderHandler : IRequestHandler<CreateReminderCommand, ReminderDto>
     {
         private readonly ApplicationDbContext _context;
+        private readonly IValidator<CreateReminderCommand> _validator;
 
-        public CreateReminderHandler(ApplicationDbContext context)
+        public CreateReminderHandler(ApplicationDbContext context, IValidator<CreateReminderCommand> validator)
         {
             _context = context;
+            _validator = validator;
         }
 
         public async Task<ReminderDto> Handle(CreateReminderCommand request, CancellationToken cancellationToken)
         {
+
+            var validationResult = await _validator.ValidateAsync(request, cancellationToken);
+
+            if (!validationResult.IsValid)
+            {
+                throw new ValidationException(validationResult.Errors);
+            }
+
             var reminder = new Reminder
             {
                 Id = Guid.NewGuid(),
                 Title = request.Title,
                 Category = request.Category,
                 Hours = request.Hours,
-                Date = request.Date,
+                Date = request.Date!.Value,
                 Ranges = request.Ranges.Select(r => new ReminderRange
                 {
                     Id = Guid.NewGuid(),
@@ -36,6 +47,7 @@ namespace TickBank.Application.Features.Reminders.Handlers
                     EndTime = r.EndTime
                 }).ToList()
             };
+            
 
             await _context.Reminders.AddAsync(reminder, cancellationToken);
             await _context.SaveChangesAsync(cancellationToken);

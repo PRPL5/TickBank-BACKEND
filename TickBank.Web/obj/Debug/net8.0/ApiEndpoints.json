@@ -1,18 +1,8 @@
 [
   {
     "ContainingType": "TickBank.Web.Controllers.RemindersController",
-    "Method": "GetAllReminders",
-    "RelativePath": "api/reminders",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "TickBank.Web.Controllers.RemindersController",
     "Method": "CreateReminder",
-    "RelativePath": "api/reminders",
+    "RelativePath": "api/reminders/createReminder",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -27,8 +17,24 @@
   },
   {
     "ContainingType": "TickBank.Web.Controllers.RemindersController",
+    "Method": "DeleteReminder",
+    "RelativePath": "api/reminders/deleteReminder/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TickBank.Web.Controllers.RemindersController",
     "Method": "GetReminderById",
-    "RelativePath": "api/reminders/{id}",
+    "RelativePath": "api/reminders/getReminderById/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -43,8 +49,18 @@
   },
   {
     "ContainingType": "TickBank.Web.Controllers.RemindersController",
+    "Method": "GetAllReminders",
+    "RelativePath": "api/reminders/getReminders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TickBank.Web.Controllers.RemindersController",
     "Method": "Update",
-    "RelativePath": "api/reminders/{id}",
+    "RelativePath": "api/reminders/updateReminder/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -57,22 +73,6 @@
       {
         "Name": "command",
         "Type": "TickBank.Application.Features.Reminders.Commands.UpdateReminderCommand",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "TickBank.Web.Controllers.RemindersController",
-    "Method": "DeleteReminder",
-    "RelativePath": "api/reminders/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
